@@ -8,9 +8,12 @@ __maintainer__ = "Vladimir Roncevic"
 __email__ = "elektron.ronca@gmail.com"
 __status__ = "Updated"
 
-from flask_script import Command
 from getpass import getpass
-from app_server.core.models.model_user import User
+
+from flask_script import Command
+
+from app_server.models.model_user import User
+
 
 class CreateSuperUser(Command):
 	"""
