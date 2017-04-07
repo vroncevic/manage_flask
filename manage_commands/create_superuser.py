@@ -8,12 +8,12 @@ __maintainer__ = "Vladimir Roncevic"
 __email__ = "elektron.ronca@gmail.com"
 __status__ = "Updated"
 
+import sys
 from getpass import getpass
 
 from flask_script import Command
 
 from app_server.models.model_user import User
-
 
 class CreateSuperUser(Command):
 	"""
@@ -21,10 +21,10 @@ class CreateSuperUser(Command):
 	Create superuser and insert to database.
 	It defines:
 		attribute:
-			db - SQLAlchemy integration object
+			__db - SQLAlchemy integration object
 		method:
 			__init__ - Initial constructor
-			run - Create admin user and add to database
+			run - Create superuser and insert to database
 	"""
 
 	def __init__(self, db):
@@ -33,16 +33,28 @@ class CreateSuperUser(Command):
 		:type: SQLAlchemy
 		"""
 		super(CreateSuperUser, self).__init__()
-		self.db = db
+		self.__db = db
 
 	def run(self):
-		username = input("Insert username: ")
-		superuser_email = input("Insert admin email: ")
-		superuser_password = getpass("Insert admin password: ")
-		self.db.session.add(
-			User(
-				fullname="Flask Superuser", username=username,
-				password=superuser_password, email=superuser_email, admin=True
-			)
+		print("Creating superuser account")
+		if sys.version_info < (3, 0, 0):
+			# noinspection PyCompatibility
+			username = raw_input("Insert username of superuser: ")
+			# noinspection PyCompatibility
+			superuser_email = raw_input("Insert email of superuser: ")
+		elif sys.version_info >= (3, 0, 0):
+			username = input("Insert username of superuser: ")
+			superuser_email = input("Insert email of superuser: ")
+		else:
+			username = "admin"
+			superuser_email = "admin@admin.com"
+		superuser_password = getpass("Insert password of superuser: ")
+		admin = User(
+			username=username, password=superuser_password, admin=True
 		)
-		self.db.session.commit()
+		admin.fullname="Flask Superuser"
+		admin.email=superuser_email
+		self.__db.session.add(admin)
+		self.__db.session.commit()
+		print("Done")
+		return 0
