@@ -67,12 +67,19 @@ Expected manage structure:
 │   └── run_test.py
 ```
 
+### Docs
+
+[![Documentation Status](https://readthedocs.org/projects/manage_flask/badge/?version=latest)](https://manage_flask.readthedocs.io/projects/manage_flask/en/latest/?badge=latest)
+
+* [manage_flask.readthedocs.io](https://manage_flask.readthedocs.io/en/latest/)
+* [www.python.org](https://www.python.org/)
+
 ### Copyright and licence
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 Copyright (C) 2017 by [vroncevic.github.io/manage_flask](https://vroncevic.github.io/manage_flask/)
 
-This tool is free software; you can redistribute it and/or modify
+**manage_flask** is free software; you can redistribute it and/or modify
 it under the same terms as Python itself, either Python version 2.x/3.x or,
 at your option, any later version of Python 3 you may have available.
