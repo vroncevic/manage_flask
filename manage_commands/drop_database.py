@@ -42,16 +42,18 @@ class DropDatabase(Command):
         Define class DropDatabase with attribute(s) and method(s).
         Drop database with tables.
         It defines:
-            attribute:
-                __db - SQLAlchemy integration object
-            method:
-                __init__ - Initial constructor
-                run - Drop database with tables
+
+            :attributes:
+                | __db - SQLAlchemy integration object
+            :methods:
+                | __init__ - Initial constructor
+                | run - Drop database with tables
     """
 
     def __init__(self, db):
         """
-            Initial constructor
+            Initial constructor.
+
             :param db: SQLAlchemy integration object
             :type db: <SQLAlchemy>
             :exceptions: None
@@ -61,7 +63,8 @@ class DropDatabase(Command):
 
     def run(self):
         """
-            Drop database with tables
+            Drop database with tables.
+
             :return: 0
             :rtype: <int>
             :exceptions: None

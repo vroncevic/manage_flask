@@ -33,9 +33,8 @@ import sys
 from os.path import dirname, abspath, join
 
 try:
-    from flask_script import Command
-
     import unittest
+    from flask_script import Command
 except ImportError as error:
     MESSAGE = "\n{0}\n{1}\n".format(__file__, error)
     sys.exit(MESSAGE)  # Force close python ATS ##############################
@@ -46,16 +45,18 @@ class RunCoverage(Command):
         Define class RunCoverage with attribute(s) and method(s).
         Create coverage reports.
         It defines:
-            attribute:
-                cov - Coverage integration object
-            method:
-                __init__ - Initial constructor
-                run - Create coverage reports
+
+            :attributes:
+                | cov - Coverage integration object
+            :methods:
+                | __init__ - Initial constructor
+                | run - Create coverage reports
     """
 
     def __init__(self, cov):
         """
-            Initial constructor
+            Initial constructor.
+
             :param cov: Coverage integration object
             :type: Coverage
             :exceptions: None
@@ -65,7 +66,8 @@ class RunCoverage(Command):
 
     def run(self):
         """
-            Create coverage reports
+            Create coverage reports.
+
             :return: 0 - success else 1
             :rtype: <int>
             :exceptions: None

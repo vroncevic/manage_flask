@@ -33,10 +33,9 @@ import sys
 
 try:
     from getpass import getpass
-
     from flask_script import Command
-
-    from app_server.models.model_user import User
+    # During integration uncomment import line
+    #from app_server.models.model_user import User
 except ImportError as error:
     MESSAGE = "\n{0}\n{1}\n".format(__file__, error)
     sys.exit(MESSAGE)  # Force close python ATS ##############################
@@ -47,16 +46,18 @@ class CreateSuperUser(Command):
         Define class CreateSuperUser with attribute(s) and method(s).
         Create superuser and insert to database.
         It defines:
-            attribute:
-                __db - SQLAlchemy integration object
-            method:
-                __init__ - Initial constructor
-                run - Create superuser and insert to database
+
+            :attributes:
+                | __db - SQLAlchemy integration object
+            :methods:
+                | __init__ - Initial constructor
+                | run - Create superuser and insert to database
     """
 
     def __init__(self, db):
         """
-            Initial constructor
+            Initial constructor.
+
             :param db: SQLAlchemy integration object
             :type: <SQLAlchemy>
             :exceptions: None
@@ -66,7 +67,8 @@ class CreateSuperUser(Command):
 
     def run(self):
         """
-            Create superuser and insert to database
+            Create superuser and insert to database.
+
             :return: 0
             :rtype: <int>
             :exceptions: None
