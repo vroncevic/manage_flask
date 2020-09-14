@@ -43,16 +43,18 @@ class CreateDatabase(Command):
         Define class CreateDatabase with attribute(s) and method(s).
         Create database by defined models.
         It defines:
-            attribute:
-                __db - SQLAlchemy integration object
-            method:
-                __init__ - Initial constructor
-                run - Create database with tables.
+
+            :attributes:
+                | __db - SQLAlchemy integration object
+            :methods:
+                | __init__ - Initial constructor
+                | run - Create database with tables.
     """
 
     def __init__(self, db):
         """
-            Initial constructor
+            Initial constructor.
+
             :param db: SQLAlchemy integration object
             :type db: <SQLAlchemy>
             :exceptions: None
@@ -62,7 +64,8 @@ class CreateDatabase(Command):
 
     def run(self):
         """
-            Create database with tables
+            Create database with tables.
+
             :return: 0
             :rtype: <int>
             :exceptions: None

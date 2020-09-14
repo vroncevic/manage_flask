@@ -16,7 +16,7 @@
      You should have received a copy of the GNU General Public License along
      with this program. If not, see <http://www.gnu.org/licenses/>.
  Info
-     Define class CreateData with attribute(s) and method(s).
+     Define class RunTest with attribute(s) and method(s).
      Create initial data and insert to database.
 """
 
@@ -32,9 +32,8 @@ __status__ = "Updated"
 import sys
 
 try:
-    from flask_script import Command
-
     import unittest
+    from flask_script import Command
 except ImportError as error:
     MESSAGE = "\n{0}\n{1}\n".format(__file__, error)
     sys.exit(MESSAGE)  # Force close python ATS ##############################
@@ -45,16 +44,18 @@ class RunTest(Command):
         Define class RunTest with attribute(s) and method(s).
         Run tests.
         It defines:
-            attribute:
-                None
-            method:
-                __init__ - Initial constructor
-                run - Run tests
+
+            :attributes:
+                | None
+            :methods:
+                | __init__ - Initial constructor
+                | run - Run tests
     """
 
     def __init__(self):
         """
             Initial constructor
+
             :exceptions: None
         """
         super(RunTest, self).__init__()
@@ -62,6 +63,7 @@ class RunTest(Command):
     def run(self):
         """
             Run testes
+
             :return: 0 for success else 1
             :rtype: <int>
             :exceptions: None
