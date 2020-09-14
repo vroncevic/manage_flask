@@ -36,6 +36,7 @@ pip install -r requirements.txt
 mv manage.py /FlaskApp/
 mv /manage_commands/ /FlaskApp/
 ```
+During integration please check comments !
 
 ### Dependencies
 
@@ -64,7 +65,6 @@ Expected manage structure:
 │   ├── __init__.py
 │   ├── run_coverage.py
 │   └── run_test.py
-├── manage.py
 ```
 
 ### Copyright and licence
