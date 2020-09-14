@@ -19,7 +19,6 @@ other information that should be provided before the modules are installed.
 - [Installation](#installation)
 - [Dependencies](#dependencies)
 - [Package structure](#package-structure)
-- [Docs](#docs)
 - [Copyright and licence](#copyright-and-licence)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
