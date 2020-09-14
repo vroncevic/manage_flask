@@ -81,12 +81,14 @@ class CreateSuperUser(Command):
             username = input("Insert username of superuser: ")
             superuser_email = input("Insert email of superuser: ")
         superuser_password = getpass("Insert password of superuser: ")
-        admin = User(
-            username=username, password=superuser_password, admin=True
-        )
-        admin.fullname="Flask Superuser"
-        admin.email=superuser_email
-        self.__db.session.add(admin)
+        # During integration uncomment lines for creating admin object
+        # and adding to session
+        # admin = User(
+        #    username=username, password=superuser_password, admin=True
+        # )
+        # admin.fullname="Flask Superuser"
+        # admin.email=superuser_email
+        # self.__db.session.add(admin)
         self.__db.session.commit()
         print("Done")
         return 0
