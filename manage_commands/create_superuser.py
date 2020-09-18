@@ -34,7 +34,7 @@ import sys
 try:
     from getpass import getpass
     from flask_script import Command
-    # During integration uncomment import line
+    # TODO During integration uncomment import line
     #from app_server.models.model_user import User
 except ImportError as error:
     MESSAGE = "\n{0}\n{1}\n".format(__file__, error)
@@ -81,14 +81,13 @@ class CreateSuperUser(Command):
             username = input("Insert username of superuser: ")
             superuser_email = input("Insert email of superuser: ")
         superuser_password = getpass("Insert password of superuser: ")
-        # During integration uncomment lines for creating admin object
-        # and adding to session
+        # TODO During integration uncomment lines for creating admin object
         # admin = User(
         #    username=username, password=superuser_password, admin=True
         # )
         # admin.fullname="Flask Superuser"
         # admin.email=superuser_email
         # self.__db.session.add(admin)
-        self.__db.session.commit()
+        # self.__db.session.commit()
         print("Done")
         return 0

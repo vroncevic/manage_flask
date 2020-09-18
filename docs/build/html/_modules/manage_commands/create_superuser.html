@@ -188,7 +188,7 @@
 <span class="k">try</span><span class="p">:</span>
     <span class="kn">from</span> <span class="nn">getpass</span> <span class="k">import</span> <span class="n">getpass</span>
     <span class="kn">from</span> <span class="nn">flask_script</span> <span class="k">import</span> <span class="n">Command</span>
-    <span class="c1"># During integration uncomment import line</span>
+    <span class="c1"># TODO During integration uncomment import line</span>
     <span class="c1">#from app_server.models.model_user import User</span>
 <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
     <span class="n">MESSAGE</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="si">{0}</span><span class="se">\n</span><span class="si">{1}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="vm">__file__</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
@@ -235,13 +235,14 @@
             <span class="n">username</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Insert username of superuser: &quot;</span><span class="p">)</span>
             <span class="n">superuser_email</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Insert email of superuser: &quot;</span><span class="p">)</span>
         <span class="n">superuser_password</span> <span class="o">=</span> <span class="n">getpass</span><span class="p">(</span><span class="s2">&quot;Insert password of superuser: &quot;</span><span class="p">)</span>
-        <span class="n">admin</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span>
-            <span class="n">username</span><span class="o">=</span><span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="n">superuser_password</span><span class="p">,</span> <span class="n">admin</span><span class="o">=</span><span class="kc">True</span>
-        <span class="p">)</span>
-        <span class="n">admin</span><span class="o">.</span><span class="n">fullname</span><span class="o">=</span><span class="s2">&quot;Flask Superuser&quot;</span>
-        <span class="n">admin</span><span class="o">.</span><span class="n">email</span><span class="o">=</span><span class="n">superuser_email</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">admin</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="c1"># TODO During integration uncomment lines for creating admin object</span>
+        <span class="c1"># admin = User(</span>
+        <span class="c1">#    username=username, password=superuser_password, admin=True</span>
+        <span class="c1"># )</span>
+        <span class="c1"># admin.fullname=&quot;Flask Superuser&quot;</span>
+        <span class="c1"># admin.email=superuser_email</span>
+        <span class="c1"># self.__db.session.add(admin)</span>
+        <span class="c1"># self.__db.session.commit()</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Done&quot;</span><span class="p">)</span>
         <span class="k">return</span> <span class="mi">0</span></div></div>
 </pre></div>
