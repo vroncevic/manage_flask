@@ -46,9 +46,9 @@ During integration please check comments !
 ```
 * getpass
 * unittest
-* Flask-Migrate (1.4.0)
-* Flask-Script (2.0.5)
-* coverage (3.4.3)
+* Flask-Migrate
+* Flask-Script
+* coverage
 ```
 
 ### Package structure
