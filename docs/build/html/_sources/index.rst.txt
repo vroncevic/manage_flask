@@ -47,6 +47,13 @@ To install modules type the following:
     mv manage.py /FlaskApp/
     mv /manage_commands/ /FlaskApp/
 
+You can use Docker to create image/container.
+
+|GitHub docker checker|
+
+.. |GitHub docker checker| image:: https://github.com/vroncevic/manage_flask/workflows/manage_flask%20docker%20checker/badge.svg
+   :target: https://github.com/vroncevic/manage_flask/actions?query=workflow%3A%22manage_flask+docker+checker%22
+
 Dependencies
 -------------
 

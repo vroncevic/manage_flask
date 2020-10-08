@@ -2,15 +2,14 @@
 
 **manage_flask** is toolset for managing Flask App.
 
-Developed in [python](https://www.python.org/) code: **100%**.
+Developed in **[python](https://www.python.org/)** code: **100%**.
 
 The README is used to introduce the modules and provide instructions on
 how to install the modules, any machine dependencies it may have and any
 other information that should be provided before the modules are installed.
 
 ![Python package](https://github.com/vroncevic/manage_flask/workflows/Python%20package/badge.svg?branch=master)
- [![GitHub issues open](https://img.shields.io/github/issues/vroncevic/manage_flask.svg)](https://github.com/vroncevic/manage_flask/issues)
- [![GitHub contributors](https://img.shields.io/github/contributors/vroncevic/manage_flask.svg)](https://github.com/vroncevic/manage_flask/graphs/contributors)
+ [![GitHub issues open](https://img.shields.io/github/issues/vroncevic/manage_flask.svg)](https://github.com/vroncevic/manage_flask/issues) [![GitHub contributors](https://img.shields.io/github/contributors/vroncevic/manage_flask.svg)](https://github.com/vroncevic/manage_flask/graphs/contributors)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -38,6 +37,10 @@ mv manage.py /FlaskApp/
 mv /manage_commands/ /FlaskApp/
 ```
 During integration please check comments !
+
+You can use docker to create image/container.
+
+[![manage_flask docker checker](https://github.com/vroncevic/manage_flask/workflows/manage_flask%20docker%20checker/badge.svg)](https://github.com/vroncevic/manage_flask/actions?query=workflow%3A%22manage_flask+docker+checker%22)
 
 ### Dependencies
 
