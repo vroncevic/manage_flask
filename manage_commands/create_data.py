@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""
+'''
  Module
      create_data.py
  Copyright
@@ -18,68 +18,68 @@
  Info
      Define class CreateData with attribute(s) and method(s).
      Create initial data and insert to database.
-"""
+'''
 
 import sys
 
 try:
     from flask_script import Command
-except ImportError as error_message:
-    MESSAGE = "\n{0}\n{1}\n".format(__file__, error_message)
+except ImportError as ats_error_message:
+    MESSAGE = '\n{0}\n{1}\n'.format(__file__, ats_error_message)
     sys.exit(MESSAGE)  # Force close python ATS ##############################
 
-__author__ = "Vladimir Roncevic"
-__copyright__ = "Copyright 2017, Free software to use and distributed it."
-__credits__ = ["Vladimir Roncevic"]
-__license__ = "GNU General Public License (GPL)"
-__version__ = "1.1.0"
-__maintainer__ = "Vladimir Roncevic"
-__email__ = "elektron.ronca@gmail.com"
-__status__ = "Updated"
+__author__ = 'Vladimir Roncevic'
+__copyright__ = 'Copyright 2017, Free software to use and distributed it.'
+__credits__ = ['Vladimir Roncevic']
+__license__ = 'https://github.com/vroncevic/manage_flask/blob/dev/LICENSE'
+__version__ = '1.2.0'
+__maintainer__ = 'Vladimir Roncevic'
+__email__ = 'elektron.ronca@gmail.com'
+__status__ = 'Updated'
 
 
 class CreateData(Command):
-    """
+    '''
         Define class CreateData with attribute(s) and method(s).
         Create initial data and insert to database.
         It defines:
 
             :attributes:
-                | __db - SQLAlchemy integration object
+                | __db - SQLAlchemy integration object.
             :methods:
-                | __init__ - Initial constructor
-                | get_db - Getter for db object
-                | run - Create initial data and insert to database
-    """
+                | __init__ - initial constructor.
+                | get_db - getter for db object.
+                | run - create initial data and insert to database.
+    '''
 
     def __init__(self, db):
-        """
+        '''
             Initial constructor.
 
-            :param db: SQLAlchemy integration object
+            :param db: SQLAlchemy integration object.
             :type db: <SQLAlchemy>
             :exceptions: None
-        """
+        '''
         super(CreateData, self).__init__()
         self.__db = db
 
     def get_db(self):
-        """
+        '''
             Getter for db object.
 
-            :return: SQLAlchemy integration object
+            :return: SQLAlchemy integration object.
             :rtype: <SQLAlchemy>
             :exceptions: None
-        """
+        '''
         return self.__db
 
     def run(self):
-        """
+        '''
             Create initial data and insert to database.
 
             :return: 0
             :rtype: <int>
             :exceptions: None
-        """
-        print("Not implemented method !")
+        '''
+        print('Not implemented method !')
         return 0
