@@ -26,15 +26,15 @@ from os.path import dirname, abspath, join
 try:
     import unittest
     from flask_script import Command
-except ImportError as error_message:
-    MESSAGE = "\n{0}\n{1}\n".format(__file__, error_message)
+except ImportError as ats_error_message:
+    MESSAGE = "\n{0}\n{1}\n".format(__file__, ats_error_message)
     sys.exit(MESSAGE)  # Force close python ATS ##############################
 
 __author__ = "Vladimir Roncevic"
 __copyright__ = "Copyright 2017, Free software to use and distributed it."
 __credits__ = ["Vladimir Roncevic"]
-__license__ = "GNU General Public License (GPL)"
-__version__ = "1.1.0"
+__license__ = "https://github.com/vroncevic/manage_flask/blob/dev/LICENSE"
+__version__ = "1.2.0"
 __maintainer__ = "Vladimir Roncevic"
 __email__ = "elektron.ronca@gmail.com"
 __status__ = "Updated"
@@ -47,18 +47,18 @@ class RunCoverage(Command):
         It defines:
 
             :attributes:
-                | cov - Coverage integration object
+                | cov - coverage integration object.
             :methods:
-                | __init__ - Initial constructor
-                | run - Create coverage reports
+                | __init__ - initial constructor.
+                | run - create coverage reports.
     """
 
     def __init__(self, cov):
         """
             Initial constructor.
 
-            :param cov: Coverage integration object
-            :type: Coverage
+            :param cov: coverage integration object.
+            :type: <Coverage>
             :exceptions: None
         """
         super(RunCoverage, self).__init__()
@@ -68,7 +68,7 @@ class RunCoverage(Command):
         """
             Create coverage reports.
 
-            :return: 0 - success else 1
+            :return: 0 - success else 1.
             :rtype: <int>
             :exceptions: None
         """

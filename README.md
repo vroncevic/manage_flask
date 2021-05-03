@@ -1,3 +1,5 @@
+<img align="right" src="https://raw.githubusercontent.com/vroncevic/manage_flask/dev/docs/manage_flask_logo.png" width="25%">
+
 # Flask Manage Mechanism
 
 **manage_flask** is toolset for managing Flask App.
