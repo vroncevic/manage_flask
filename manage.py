@@ -43,7 +43,8 @@ try:
     )
     COV.start()
 
-    from app_server import app, db
+    # TODO integrate manage_flask to Flask App
+    # from app_server import app, db
 except ImportError as ats_error_message:
     MESSAGE = '\n{0}\n{1}\n'.format(__file__, ats_error_message)
     sys.exit(MESSAGE)  # Force close python ATS ##############################
@@ -52,7 +53,7 @@ __author__ = 'Vladimir Roncevic'
 __copyright__ = 'Copyright 2017, Free software to use and distributed it.'
 __credits__ = ['Vladimir Roncevic']
 __license__ = 'https://github.com/vroncevic/manage_flask/blob/dev/LICENSE'
-__version__ = '1.2.0'
+__version__ = '1.3.0'
 __maintainer__ = 'Vladimir Roncevic'
 __email__ = 'elektron.ronca@gmail.com'
 __status__ = 'Updated'
@@ -65,13 +66,15 @@ __status__ = 'Updated'
 # python manage.py runserver
 
 if __name__ == '__main__':
-    MIGRATE = Migrate(app, db)
-    MANAGER = Manager(app)
-    MANAGER.add_command('db', MigrateCommand)
-    MANAGER.add_command('create_db', CreateDatabase(db))
-    MANAGER.add_command('drop_db', DropDatabase(db))
-    MANAGER.add_command('create_data', CreateData(db))
-    MANAGER.add_command('createsuperuser', CreateSuperUser(db))
-    MANAGER.add_command('test', RunTest())
-    MANAGER.add_command('coverage', RunCoverage(COV))
-    MANAGER.run()
+    # TODO integrate manage_flask to Flask App
+    # MIGRATE = Migrate(app, db)
+    # MANAGER = Manager(app)
+    # MANAGER.add_command('db', MigrateCommand)
+    # MANAGER.add_command('create_db', CreateDatabase(db))
+    # MANAGER.add_command('drop_db', DropDatabase(db))
+    # MANAGER.add_command('create_data', CreateData(db))
+    # MANAGER.add_command('createsuperuser', CreateSuperUser(db))
+    # MANAGER.add_command('test', RunTest())
+    # MANAGER.add_command('coverage', RunCoverage(COV))
+    # MANAGER.run()
+    print('Done')

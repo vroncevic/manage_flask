@@ -15,12 +15,13 @@
 
 FROM debian:10
 RUN apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
- tree \
- htop \
- python \
- python-pip \
- python-wheel
+RUN DEBIAN_FRONTEND=noninteractive \
+    apt-get install -yq --no-install-recommends \
+    tree \
+    htop \
+    python \
+    python-pip \
+    python-wheel
 
 RUN pip install --upgrade setuptools
 COPY requirements.txt /

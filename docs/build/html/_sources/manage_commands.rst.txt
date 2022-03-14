@@ -10,8 +10,6 @@ Submodules
    manage_commands.create_database
    manage_commands.create_superuser
    manage_commands.drop_database
-   manage_commands.run_coverage
-   manage_commands.run_test
 
 Module contents
 ---------------

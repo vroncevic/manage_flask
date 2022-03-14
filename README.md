@@ -6,6 +6,9 @@
 
 Developed in **[python](https://www.python.org/)** code: **100%**.
 
+[![codecov](https://codecov.io/gh/vroncevic/manage_flask/branch/master/graph/badge.svg?token=8GW55W5189)](https://codecov.io/gh/vroncevic/manage_flask)
+[![CircleCI](https://circleci.com/gh/vroncevic/manage_flask/tree/master.svg?style=svg)](https://circleci.com/gh/vroncevic/manage_flask/tree/master)
+
 The README is used to introduce the modules and provide instructions on
 how to install the modules, any machine dependencies it may have and any
 other information that should be provided before the modules are installed.
@@ -14,6 +17,7 @@ other information that should be provided before the modules are installed.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
 **Table of Contents**
 
 - [Installation](#installation)
@@ -28,7 +32,7 @@ other information that should be provided before the modules are installed.
 
 Navigate to **[release page](https://github.com/vroncevic/manage_flask/releases)** download and extract release archive.
 
-To install modules type the following:
+To install modules type the following
 
 ```
 tar xvzf manage_flask-x.y.z.tar.gz
@@ -37,6 +41,7 @@ pip install -r requirements.txt
 mv manage.py /FlaskApp/
 mv /manage_commands/ /FlaskApp/
 ```
+
 During integration please check comments !
 
 You can use docker to create image/container.
@@ -45,7 +50,7 @@ You can use docker to create image/container.
 
 ### Dependencies
 
-**manage_flask** requires other modules and libraries (Python 2.x/3.x):
+**manage_flask** requires other modules and libraries (Python 2.x/3.x)
 
 ```
 * getpass
@@ -57,27 +62,24 @@ You can use docker to create image/container.
 
 ### Package structure
 
-Expected manage structure:
+Expected manage structure
 
 ```
-.
 ├── manage.py
-├── manage_commands/
-│   ├── create_database.py
-│   ├── create_data.py
-│   ├── create_superuser.py
-│   ├── drop_database.py
-│   ├── __init__.py
-│   ├── run_coverage.py
-│   └── run_test.py
+manage_commands/
+├── create_database.py
+├── create_data.py
+├── create_superuser.py
+├── drop_database.py
+└──  __init__.py
 ```
 
 ### Docs
 
 [![Documentation Status](https://readthedocs.org/projects/manage_flask/badge/?version=latest)](https://manage_flask.readthedocs.io/projects/manage_flask/en/latest/?badge=latest)
 
-* [manage_flask.readthedocs.io](https://manage_flask.readthedocs.io/en/latest/)
-* [www.python.org](https://www.python.org/)
+- [manage_flask.readthedocs.io](https://manage_flask.readthedocs.io/en/latest/)
+- [www.python.org](https://www.python.org/)
 
 ### Copyright and licence
 
