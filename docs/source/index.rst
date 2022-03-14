@@ -25,7 +25,7 @@ other information that should be provided before the modules are installed.
 
 .. toctree::
    :maxdepth: 4
-   :caption: Contents:
+   :caption: Contents
 
    self
    modules
@@ -37,7 +37,7 @@ Navigate to release `page`_ download and extract release archive.
 
 .. _page: https://github.com/vroncevic/manage_flask/releases
 
-To install modules type the following:
+To install modules type the following
 
 .. code-block:: bash
 
@@ -57,7 +57,7 @@ You can use Docker to create image/container.
 Dependencies
 -------------
 
-**manage_flask** requires next modules and libraries:
+**manage_flask** requires next modules and libraries
 
 * getpass - Default pyp
 * unittest - Default pyp
@@ -70,20 +70,17 @@ Package structure
 
 **manage_flask** is based on OOP.
 
-Code structure:
+Code structure
 
 .. code-block:: bash
 
-    .
-    manage.py
+    ├── manage.py
     manage_commands/
     ├── create_database.py
     ├── create_data.py
     ├── create_superuser.py
     ├── drop_database.py
-    ├── __init__.py
-    ├── run_coverage.py
-    └── run_test.py
+    └──  __init__.py
 
 Copyright and licence
 ----------------------

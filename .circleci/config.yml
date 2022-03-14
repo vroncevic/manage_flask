@@ -1,0 +1,21 @@
+version: 2.1
+executors:
+  manage-flask-executor:
+    docker:
+      - image: cimg/python:3.8.10
+        auth:
+          username: $DOCKER_HUB_USER
+          password: $DOCKER_HUB_PASSWORD
+jobs:
+  manage-flask:
+    executor: manage-flask-executor
+    steps:
+      - checkout
+      - run: |
+          python3 -m pip install --upgrade setuptools
+          python3 -m pip install --upgrade pip
+          python3 -m pip install --upgrade build
+workflows:
+  manage-flask-workflow:
+    jobs:
+      - manage-flask

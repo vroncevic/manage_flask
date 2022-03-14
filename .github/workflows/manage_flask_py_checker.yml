@@ -2,8 +2,12 @@ name: manage_flask py checker
 on:
   push:
     branches: [ master ]
+    paths:
+      - 'manage_commands/**'
   pull_request:
     branches: [ master ]
+    paths:
+      - 'manage_commands/**'
 jobs:
   build:
     runs-on: ubuntu-latest
