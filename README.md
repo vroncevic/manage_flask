@@ -4,7 +4,7 @@
 
 **manage_flask** is toolset for managing Flask App.
 
-Developed in **[python](https://www.python.org/)** code: **100%**.
+Developed in **[python](https://www.python.org/)** code.
 
 [![codecov](https://codecov.io/gh/vroncevic/manage_flask/branch/master/graph/badge.svg?token=8GW55W5189)](https://codecov.io/gh/vroncevic/manage_flask)
 [![CircleCI](https://circleci.com/gh/vroncevic/manage_flask/tree/master.svg?style=svg)](https://circleci.com/gh/vroncevic/manage_flask/tree/master)
@@ -23,6 +23,7 @@ other information that should be provided before the modules are installed.
 - [Dependencies](#dependencies)
 - [Package structure](#package-structure)
 - [Docs](#docs)
+- [Contributing](#contributing)
 - [Copyright and licence](#copyright-and-licence)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -33,7 +34,7 @@ Navigate to **[release page](https://github.com/vroncevic/manage_flask/releases)
 
 To install modules type the following
 
-```
+```bash
 tar xvzf manage_flask-x.y.z.tar.gz
 cd manage_flask-x.y.z/
 pip install -r requirements.txt
@@ -51,7 +52,7 @@ You can use docker to create image/container.
 
 **manage_flask** requires other modules and libraries (Python 2.x/3.x)
 
-```
+```bash
 * getpass
 * unittest
 * Flask-Migrate
@@ -63,7 +64,7 @@ You can use docker to create image/container.
 
 Expected manage structure
 
-```
+```bash
 ├── manage.py
 manage_commands/
 ├── create_database.py
@@ -79,6 +80,10 @@ manage_commands/
 
 - [manage_flask.readthedocs.io](https://manage_flask.readthedocs.io/en/latest/)
 - [www.python.org](https://www.python.org/)
+
+### Contributing
+
+[Contributing to config_flask](CONTRIBUTING.md)
 
 ### Copyright and licence
 
