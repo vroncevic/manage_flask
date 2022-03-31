@@ -29,8 +29,6 @@ try:
     from manage_commands.drop_database import DropDatabase
     from manage_commands.create_data import CreateData
     from manage_commands.create_superuser import CreateSuperUser
-    from manage_commands.run_coverage import RunCoverage
-    from manage_commands.run_test import RunTest
 
     COV = coverage.coverage(
         branch=True,
@@ -53,7 +51,7 @@ __author__ = 'Vladimir Roncevic'
 __copyright__ = 'Copyright 2017, Free software to use and distributed it.'
 __credits__ = ['Vladimir Roncevic']
 __license__ = 'https://github.com/vroncevic/manage_flask/blob/dev/LICENSE'
-__version__ = '1.3.0'
+__version__ = '1.3.1'
 __maintainer__ = 'Vladimir Roncevic'
 __email__ = 'elektron.ronca@gmail.com'
 __status__ = 'Updated'
@@ -74,7 +72,5 @@ if __name__ == '__main__':
     # MANAGER.add_command('drop_db', DropDatabase(db))
     # MANAGER.add_command('create_data', CreateData(db))
     # MANAGER.add_command('createsuperuser', CreateSuperUser(db))
-    # MANAGER.add_command('test', RunTest())
-    # MANAGER.add_command('coverage', RunCoverage(COV))
     # MANAGER.run()
     print('Done')
