@@ -1,16 +1,16 @@
-name: manage_flask triage
+name: manage_flask triage label
 on:
   issues:
     types: [opened]
 jobs:
-  commentOnNewIssues:
-    name: manage_flask triage
+  applyTriageLabel:
+    name: manage_flask triage label
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: manage_flask triage
+      - name: manage_flask triage label
         uses: actions/github@v1.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          args: comment "[manage_flask] should be supported for Python 2.7, 3.5, 3.6, 3.7, 3.8, 3.9"
+          args: label triage

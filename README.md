@@ -2,12 +2,12 @@
 
 # Flask Manage Mechanism
 
-**manage_flask** is toolset for managing Flask App.
+☯️ **manage_flask** is toolset for managing Flask App.
 
-Developed in **[python](https://www.python.org/)** code.
+Developed in 🐍 **[python](https://www.python.org/)** code.
 
 [![codecov](https://codecov.io/gh/vroncevic/manage_flask/branch/master/graph/badge.svg?token=8GW55W5189)](https://codecov.io/gh/vroncevic/manage_flask)
-[![CircleCI](https://circleci.com/gh/vroncevic/manage_flask/tree/master.svg?style=svg)](https://circleci.com/gh/vroncevic/manage_flask/tree/master)
+[![circleci](https://circleci.com/gh/vroncevic/manage_flask/tree/master.svg?style=svg)](https://circleci.com/gh/vroncevic/manage_flask/tree/master)
 
 The README is used to introduce the modules and provide instructions on
 how to install the modules, any machine dependencies it may have and any
@@ -30,7 +30,7 @@ other information that should be provided before the modules are installed.
 
 ### Installation
 
-Navigate to **[release page](https://github.com/vroncevic/manage_flask/releases)** download and extract release archive.
+Navigate to **[release page](https://github.com/vroncevic/manage_flask/releases)** download and extract release archive 📦.
 
 To install modules type the following
 
@@ -44,7 +44,7 @@ mv /manage_commands/ /FlaskApp/
 
 During integration please check comments !
 
-You can use docker to create image/container.
+You can use docker to create image/container 🚢.
 
 [![manage_flask docker checker](https://github.com/vroncevic/manage_flask/workflows/manage_flask%20docker%20checker/badge.svg)](https://github.com/vroncevic/manage_flask/actions?query=workflow%3A%22manage_flask+docker+checker%22)
 
@@ -53,16 +53,13 @@ You can use docker to create image/container.
 **manage_flask** requires other modules and libraries (Python 2.x/3.x)
 
 ```bash
-* getpass
-* unittest
-* Flask-Migrate
-* Flask-Script
-* coverage
+Flask-Migrate      == 2.6.0
+Flask-Script       == 2.0.6
 ```
 
 ### Package structure
 
-Expected manage structure
+🧰 Expected manage structure
 
 ```bash
 ├── manage.py
@@ -78,12 +75,14 @@ manage_commands/
 
 [![Documentation Status](https://readthedocs.org/projects/manage_flask/badge/?version=latest)](https://manage_flask.readthedocs.io/projects/manage_flask/en/latest/?badge=latest)
 
+📗 More documentation and info at
+
 - [manage_flask.readthedocs.io](https://manage_flask.readthedocs.io/en/latest/)
 - [www.python.org](https://www.python.org/)
 
 ### Contributing
 
-[Contributing to config_flask](CONTRIBUTING.md)
+[Contributing to manage_flask](CONTRIBUTING.md)
 
 ### Copyright and licence
 
