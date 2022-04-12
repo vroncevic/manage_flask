@@ -6,9 +6,6 @@
 
 Developed in 🐍 **[python](https://www.python.org/)** code.
 
-[![codecov](https://codecov.io/gh/vroncevic/manage_flask/branch/master/graph/badge.svg?token=8GW55W5189)](https://codecov.io/gh/vroncevic/manage_flask)
-[![circleci](https://circleci.com/gh/vroncevic/manage_flask/tree/master.svg?style=svg)](https://circleci.com/gh/vroncevic/manage_flask/tree/master)
-
 The README is used to introduce the modules and provide instructions on
 how to install the modules, any machine dependencies it may have and any
 other information that should be provided before the modules are installed.
