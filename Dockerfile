@@ -1,4 +1,4 @@
-# Copyright 2018 Vladimir Roncevic <elektron.ronca@gmail.com>
+# Copyright 2017 Vladimir Roncevic <elektron.ronca@gmail.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,15 +17,27 @@ FROM debian:10
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive \
     apt-get install -yq --no-install-recommends \
+    vim \
+    nano \
     tree \
     htop \
+    wget \
+    curl \
+    unzip \
+    ca-certificates \
+    openssl \
     python \
-    python-pip \
-    python-wheel
+    python-dev \
+    libyaml-dev
 
-RUN pip install --upgrade setuptools
+RUN wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
+RUN python2 get-pip.py
+RUN python2 -m pip install --upgrade setuptools
+RUN python2 -m pip install --upgrade pip
+RUN python2 -m pip install --upgrade build
+RUN rm -f get-pip.py
 COPY requirements.txt /
-RUN pip install -r requirements.txt
+RUN pip2 install -r requirements.txt
 RUN rm -f requirements.txt
 RUN mkdir /manage_commands/
 COPY manage_commands /manage_commands/

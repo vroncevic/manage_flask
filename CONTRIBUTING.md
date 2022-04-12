@@ -4,4 +4,4 @@ The following is a set of guidelines for contributing to manage_flask and its pa
 
 ## Code of Conduct
 
-manage_flask project and everyone participating in it is governed by the [manage_flask Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [manage_flask](mailto:elektron.ronca@gmail.com).
+manage_flask project and everyone participating in it is governed by the [manage_flask code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [manage_flask](mailto:elektron.ronca@gmail.com).

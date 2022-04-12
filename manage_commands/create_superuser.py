@@ -35,7 +35,7 @@ __author__ = 'Vladimir Roncevic'
 __copyright__ = 'Copyright 2017, Free software to use and distributed it.'
 __credits__ = ['Vladimir Roncevic']
 __license__ = 'https://github.com/vroncevic/manage_flask/blob/dev/LICENSE'
-__version__ = '1.3.1'
+__version__ = '1.4.1'
 __maintainer__ = 'Vladimir Roncevic'
 __email__ = 'elektron.ronca@gmail.com'
 __status__ = 'Updated'
@@ -75,12 +75,12 @@ class CreateSuperUser(Command):
         '''
         print('Creating superuser account')
         username, superuser_email = None, None
-        # try:
-        #     username = raw_input('Insert username of superuser: ')
-        #     superuser_email = raw_input('Insert email of superuser: ')
-        # except NameError:
-        username = input('Insert username of superuser: ')
-        superuser_email = input('Insert email of superuser: ')
+        try:
+            username = raw_input('Insert username of superuser: ')
+            superuser_email = raw_input('Insert email of superuser: ')
+        except NameError:
+            username = input('Insert username of superuser: ')
+            superuser_email = input('Insert email of superuser: ')
         superuser_password = getpass('Insert password of superuser: ')
         # TODO During integration uncomment lines for creating admin object
         # admin = User(

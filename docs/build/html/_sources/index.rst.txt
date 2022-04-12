@@ -59,11 +59,8 @@ Dependencies
 
 **manage_flask** requires next modules and libraries
 
-* getpass - Default pyp
-* unittest - Default pyp
 * `Flask-Migrate - SQLAlchemy database migrations for Flask applications using Alembic <https://pypi.org/project/Flask-Migrate/>`_
 * `Flask-Script - Scripting support for Flask <https://pypi.org/project/Flask-Script/>`_
-* `coverage - Code coverage measurement for Python <https://pypi.org/project/coverage/>`_
 
 Package structure
 ------------------
