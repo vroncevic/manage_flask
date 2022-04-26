@@ -29,7 +29,7 @@ other information that should be provided before the modules are installed.
 
 Navigate to **[release page](https://github.com/vroncevic/manage_flask/releases)** download and extract release archive 📦.
 
-To install modules type the following
+To install **manage_flask** 📦 type the following
 
 ```bash
 tar xvzf manage_flask-x.y.z.tar.gz
@@ -79,7 +79,7 @@ manage_commands/
 
 ### Contributing
 
-[Contributing to manage_flask](CONTRIBUTING.md)
+🌎 🌍 🌏 [Contributing to manage_flask](CONTRIBUTING.md)
 
 ### Copyright and licence
 

@@ -49,3 +49,4 @@ RUN mv /manage_commands/ /FlaskApp/
 RUN rm -rf /manage_commands/
 RUN chmod -R 755 /FlaskApp/
 RUN tree /FlaskApp/
+
