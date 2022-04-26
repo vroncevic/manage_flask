@@ -1,11 +1,11 @@
-name: manage_flask toc generator
+name: manage_flask_toc
 on:
   push:
     paths:
       - '**.md'
 jobs:
   generateTOC:
-    name: manage_flask toc generator
+    name: manage_flask_toc
     runs-on: ubuntu-latest
     steps:
       - uses: technote-space/toc-generator@v2
