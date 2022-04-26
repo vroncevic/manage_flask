@@ -11,8 +11,8 @@ other information that should be provided before the modules are installed.
 
 |python package| |github issues| |documentation status| |github contributors|
 
-.. |python package| image:: https://github.com/vroncevic/manage_flask/workflows/python%20package/badge.svg
-   :target: https://github.com/vroncevic/manage_flask/workflows/python%20package/badge.svg?branch=master
+.. |python package| image:: https://img.shields.io/github/workflow/status/vroncevic/manage_flask/manage_flask_python_checker?style=flat&label=manage_flask%20python%20checker
+   :target: https://img.shields.io/github/workflow/status/vroncevic/manage_flask/manage_flask_python_checker
 
 .. |github issues| image:: https://img.shields.io/github/issues/vroncevic/manage_flask.svg
    :target: https://github.com/vroncevic/manage_flask/issues
@@ -51,8 +51,8 @@ You can use Docker to create image/container 🚢.
 
 |github docker checker|
 
-.. |github docker checker| image:: https://github.com/vroncevic/manage_flask/workflows/manage_flask%20docker%20checker/badge.svg
-   :target: https://github.com/vroncevic/manage_flask/actions?query=workflow%3A%22manage_flask+docker+checker%22
+.. |github docker checker| image:: https://img.shields.io/github/workflow/status/vroncevic/manage_flask/manage_flask_docker_checker?style=flat&label=manage_flask%20docker%20checker
+   :target: https://img.shields.io/github/workflow/status/vroncevic/manage_flask/manage_flask_docker_checker
 
 Dependencies
 -------------
