@@ -10,7 +10,7 @@ The README is used to introduce the modules and provide instructions on
 how to install the modules, any machine dependencies it may have and any
 other information that should be provided before the modules are installed.
 
-[![manage_flask python package](https://github.com/vroncevic/manage_flask/actions/workflows/manage_flask_package.yml/badge.svg?branch=master)](https://github.com/vroncevic/manage_flask/actions/workflows/manage_flask_package.yml) [![GitHub issues open](https://img.shields.io/github/issues/vroncevic/manage_flask.svg)](https://github.com/vroncevic/manage_flask/issues) [![GitHub contributors](https://img.shields.io/github/contributors/vroncevic/manage_flask.svg)](https://github.com/vroncevic/manage_flask/graphs/contributors)
+[![manage_flask python checker](https://img.shields.io/github/workflow/status/vroncevic/manage_flask/manage_flask_python_checker?style=flat&label=manage_flask%20python%20checker)](https://github.com/vroncevic/manage_flask/actions/workflows/manage_flask_python_checker.yml) [![manage_flask package checker](https://img.shields.io/github/workflow/status/vroncevic/manage_flask/manage_flask_package_checker?style=flat&label=manage_flask%20package%20checker)](https://github.com/vroncevic/manage_flask/actions/workflows/manage_flask_package_checker.yml) [![GitHub issues open](https://img.shields.io/github/issues/vroncevic/manage_flask.svg)](https://github.com/vroncevic/manage_flask/issues) [![GitHub contributors](https://img.shields.io/github/contributors/vroncevic/manage_flask.svg)](https://github.com/vroncevic/manage_flask/graphs/contributors)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -26,6 +26,10 @@ other information that should be provided before the modules are installed.
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ### Installation
+
+Used next development environment
+
+![debian linux os](https://raw.githubusercontent.com/vroncevic/manage_flask/dev/docs/debtux.png)
 
 Navigate to **[release page](https://github.com/vroncevic/manage_flask/releases)** download and extract release archive 📦.
 
@@ -43,7 +47,7 @@ During integration please check comments !
 
 You can use docker to create image/container 🚢.
 
-[![manage_flask docker checker](https://github.com/vroncevic/manage_flask/workflows/manage_flask%20docker%20checker/badge.svg)](https://github.com/vroncevic/manage_flask/actions?query=workflow%3A%22manage_flask+docker+checker%22)
+[![manage_flask docker checker](https://img.shields.io/github/workflow/status/vroncevic/manage_flask/manage_flask_docker_checker?style=flat&label=manage_flask%20docker%20checker)](https://github.com/vroncevic/manage_flask/actions/workflows/manage_flask_docker_checker.yml)
 
 ### Dependencies
 
