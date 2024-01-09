@@ -1,27 +1,34 @@
 Manage Flask
 -------------
 
-☯️ **manage_flask** is toolset for configuration setup of Flask App.
+**manage_flask** is toolset for configuration setup of Flask App.
 
-Developed in 🐍 `python <https://www.python.org/>`_ code.
+Developed in `python <https://www.python.org/>`_ code.
 
 The README is used to introduce the modules and provide instructions on
 how to install the modules, any machine dependencies it may have and any
 other information that should be provided before the modules are installed.
 
-|python package| |github issues| |documentation status| |github contributors|
+|manage_flask python checker| |manage_flask package checker|
 
-.. |python package| image:: https://img.shields.io/github/workflow/status/vroncevic/manage_flask/manage_flask_python_checker?style=flat&label=manage_flask%20python%20checker
-   :target: https://img.shields.io/github/workflow/status/vroncevic/manage_flask/manage_flask_python_checker
+|manage_flask github issues| |manage_flask github contributors|
 
-.. |github issues| image:: https://img.shields.io/github/issues/vroncevic/manage_flask.svg
+|manage_flask documentation status|
+
+.. |manage_flask python checker| image:: https://github.com/vroncevic/manage_flask/actions/workflows/manage_flask_python_checker.yml/badge.svg
+   :target: https://github.com/vroncevic/manage_flask/actions/workflows/manage_flask_python_checker.yml
+
+.. |manage_flask package checker| image:: https://github.com/vroncevic/manage_flask/actions/workflows/manage_flask_package_checker.yml/badge.svg
+   :target: https://github.com/vroncevic/manage_flask/actions/workflows/manage_flask_package.yml
+
+.. |manage_flask github issues| image:: https://img.shields.io/github/issues/vroncevic/manage_flask.svg
    :target: https://github.com/vroncevic/manage_flask/issues
 
-.. |github contributors| image:: https://img.shields.io/github/contributors/vroncevic/manage_flask.svg
+.. |manage_flask github contributors| image:: https://img.shields.io/github/contributors/vroncevic/manage_flask.svg
    :target: https://github.com/vroncevic/manage_flask/graphs/contributors
 
-.. |documentation status| image:: https://readthedocs.org/projects/manage_flask/badge/?version=latest
-   :target: https://manage_flask.readthedocs.io/projects/manage_flask/en/latest/?badge=latest
+.. |manage_flask documentation Status| image:: https://readthedocs.org/projects/manage_flask/badge/?version=latest
+   :target: https://manage_flask.readthedocs.io/en/latest/?badge=latest
 
 .. toctree::
    :maxdepth: 4
@@ -33,11 +40,11 @@ other information that should be provided before the modules are installed.
 Installation
 -------------
 
-Navigate to release `page`_ download and extract release archive 📦.
+Navigate to release `page`_ download and extract release archive.
 
 .. _page: https://github.com/vroncevic/manage_flask/releases
 
-To install **manage_flask** 📦 type the following
+To install **manage_flask** type the following
 
 .. code-block:: bash
 
@@ -47,12 +54,7 @@ To install **manage_flask** 📦 type the following
     mv manage.py /FlaskApp/
     mv /manage_commands/ /FlaskApp/
 
-You can use Docker to create image/container 🚢.
-
-|github docker checker|
-
-.. |github docker checker| image:: https://img.shields.io/github/workflow/status/vroncevic/manage_flask/manage_flask_docker_checker?style=flat&label=manage_flask%20docker%20checker
-   :target: https://img.shields.io/github/workflow/status/vroncevic/manage_flask/manage_flask_docker_checker
+You can use Docker to create image/container.
 
 Dependencies
 -------------
@@ -67,17 +69,17 @@ Package structure
 
 **manage_flask** is based on OOP.
 
-🧰 Code structure
+Code structure
 
 .. code-block:: bash
 
     ├── manage.py
     manage_commands/
-    ├── create_database.py
-    ├── create_data.py
-    ├── create_superuser.py
-    ├── drop_database.py
-    └──  __init__.py
+        ├── create_database.py
+        ├── create_data.py
+        ├── create_superuser.py
+        ├── drop_database.py
+        └──  __init__.py
 
 Copyright and licence
 ----------------------
@@ -90,13 +92,13 @@ Copyright and licence
 .. |license: apache 2.0| image:: https://img.shields.io/badge/License-Apache%202.0-blue.svg
    :target: https://opensource.org/licenses/Apache-2.0
 
-Copyright (C) 2017 by `vroncevic.github.io/manage_flask <https://vroncevic.github.io/manage_flask>`_
+Copyright (C) 2017 - 2024 by `vroncevic.github.io/manage_flask <https://vroncevic.github.io/manage_flask>`_
 
 **manage_flask** is free software; you can redistribute it and/or modify
-it under the same terms as Python itself, either Python version 2.x/3.x or,
+it under the same terms as Python itself, either Python version 3.x or,
 at your option, any later version of Python 3 you may have available.
 
-🌎 🌍 🌏 Lets help and support PSF.
+Lets help and support PSF.
 
 |python software foundation|
 
@@ -105,8 +107,8 @@ at your option, any later version of Python 3 you may have available.
 
 |donate|
 
-.. |donate| image:: https://www.paypalobjects.com/en_us/i/btn/btn_donatecc_lg.gif
-   :target: https://psfmember.org/index.php?q=civicrm/contribute/transact&reset=1&id=2
+.. |donate| image:: https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif
+   :target: https://www.python.org/psf/donations/
 
 Indices and tables
 ------------------
