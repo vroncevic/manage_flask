@@ -4,12 +4,10 @@ on:
     branches: [ master ]
     paths:
       - 'manage_commands/**'
-      - 'tests/**'
   pull_request:
     branches: [ master ]
     paths:
       - 'manage_commands/**'
-      - 'tests/**'
 jobs:
   build:
     runs-on: ubuntu-latest
