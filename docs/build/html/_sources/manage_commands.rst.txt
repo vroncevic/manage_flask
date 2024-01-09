@@ -5,6 +5,7 @@ Submodules
 ----------
 
 .. toctree::
+   :maxdepth: 4
 
    manage_commands.create_data
    manage_commands.create_database
@@ -15,6 +16,7 @@ Module contents
 ---------------
 
 .. automodule:: manage_commands
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :private-members:

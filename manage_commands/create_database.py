@@ -1,38 +1,40 @@
 # -*- coding: utf-8 -*-
 
 '''
- Module
-     create_database.py
- Copyright
-     Copyright (C) 2017 Vladimir Roncevic <elektron.ronca@gmail.com>
-     manage_flask is free software: you can redistribute it and/or modify it
-     under the terms of the GNU General Public License as published by the
-     Free Software Foundation, either version 3 of the License, or
-     (at your option) any later version.
-     manage_flask is distributed in the hope that it will be useful, but
-     WITHOUT ANY WARRANTY; without even the implied warranty of
-     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-     See the GNU General Public License for more details.
-     You should have received a copy of the GNU General Public License along
-     with this program. If not, see <http://www.gnu.org/licenses/>.
- Info
-     Define class CreateDatabase with attribute(s) and method(s).
-     Create database by defined models.
+Module
+    create_database.py
+Copyright
+    Copyright (C) 2017 - 2024 Vladimir Roncevic <elektron.ronca@gmail.com>
+    manage_flask is free software: you can redistribute it and/or modify it
+    under the terms of the GNU General Public License as published by the
+    Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    manage_flask is distributed in the hope that it will be useful, but
+    WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+    See the GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License along
+    with this program. If not, see <http://www.gnu.org/licenses/>.
+Info
+    Defines class CreateDatabase with attribute(s) and method(s).
+    Creates database by Definesd models.
 '''
 
 import sys
+from typing import List
 
 try:
     from flask_script import Command
+    from flask_sqlalchemy import SQLAlchemy
 except ImportError as ats_error_message:
-    MESSAGE = '\n{0}\n{1}\n'.format(__file__, ats_error_message)
-    sys.exit(MESSAGE)  # Force close python ATS ##############################
+    # Force close python ATS ##################################################
+    sys.exit(f'\n{__file__}\n{ats_error_message}\n')
 
 __author__ = 'Vladimir Roncevic'
-__copyright__ = 'Copyright 2017, Free software to use and distributed it.'
-__credits__ = ['Vladimir Roncevic']
+__copyright__ = '(C) 2024, Free software to use and distributed it.'
+__credits__: List[str] = ['Vladimir Roncevic', 'Python Software Foundation']
 __license__ = 'https://github.com/vroncevic/manage_flask/blob/dev/LICENSE'
-__version__ = '1.5.1'
+__version__ = '1.6.1'
 __maintainer__ = 'Vladimir Roncevic'
 __email__ = 'elektron.ronca@gmail.com'
 __status__ = 'Updated'
@@ -40,37 +42,38 @@ __status__ = 'Updated'
 
 class CreateDatabase(Command):
     '''
-        Define class CreateDatabase with attribute(s) and method(s).
-        Create database by defined models.
-        It defines:
+        Defines class CreateDatabase with attribute(s) and method(s).
+        Creates database by Definesd models.
+
+        It Definess:
 
             :attributes:
-                | __db - SQLAlchemy integration object.
+                | _db - SQLAlchemy integration object.
             :methods:
-                | __init__ - initial constructor.
-                | run - create database with tables.
+                | __init__ - Initials CreateDatabase constructor.
+                | run - Creates database with tables.
     '''
 
-    def __init__(self, db):
+    def __init__(self, db: SQLAlchemy) -> None:
         '''
-            Initial constructor.
+            Initials CreateDatabase constructor.
 
-            :param db: SQLAlchemy integration object.
+            :param db: SQLAlchemy integration object
             :type db: <SQLAlchemy>
             :exceptions: None
         '''
         super(CreateDatabase, self).__init__()
-        self.__db = db
+        self._db: SQLAlchemy = db
 
-    def run(self):
+    def run(self) -> int:
         '''
-            Create database with tables.
+            Creates database with tables.
 
-            :return: 0.
+            :return: 0
             :rtype: <int>
             :exceptions: None
         '''
-        print('Create database/tables')
-        self.__db.create_all()
+        print('Creates database/tables')
+        self._db.create_all()
         print('Done')
         return 0
