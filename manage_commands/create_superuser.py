@@ -26,7 +26,7 @@ from typing import List
 try:
     # During integration uncomment import line
     # from getpass import getpass
-    from flask_script import Command
+    from flask_script.commands import Command  # type: ignore
     from flask_sqlalchemy import SQLAlchemy
     # During integration uncomment import line
     # from app_server.models.model_user import User
@@ -38,7 +38,7 @@ __author__ = 'Vladimir Roncevic'
 __copyright__ = '(C) 2024, Free software to use and distributed it.'
 __credits__: List[str] = ['Vladimir Roncevic', 'Python Software Foundation']
 __license__ = 'https://github.com/vroncevic/manage_flask/blob/dev/LICENSE'
-__version__ = '1.6.1'
+__version__ = '1.6.2'
 __maintainer__ = 'Vladimir Roncevic'
 __email__ = 'elektron.ronca@gmail.com'
 __status__ = 'Updated'
@@ -66,7 +66,7 @@ class CreateSuperUser(Command):
             :type: <SQLAlchemy>
             :exceptions: None
         '''
-        super(CreateSuperUser, self).__init__()
+        super(CreateSuperUser, self).__init__()  # type: ignore
         self._db: SQLAlchemy = db
 
     def run(self) -> int:

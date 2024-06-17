@@ -24,7 +24,7 @@ import sys
 from typing import List
 
 try:
-    from flask_script import Command
+    from flask_script.commands import Command  # type: ignore
     from flask_sqlalchemy import SQLAlchemy
 except ImportError as ats_error_message:
     # Force close python ATS ##################################################
@@ -34,7 +34,7 @@ __author__ = 'Vladimir Roncevic'
 __copyright__ = '(C) 2024, Free software to use and distributed it.'
 __credits__: List[str] = ['Vladimir Roncevic', 'Python Software Foundation']
 __license__ = 'https://github.com/vroncevic/manage_flask/blob/dev/LICENSE'
-__version__ = '1.6.1'
+__version__ = '1.6.2'
 __maintainer__ = 'Vladimir Roncevic'
 __email__ = 'elektron.ronca@gmail.com'
 __status__ = 'Updated'
@@ -63,7 +63,7 @@ class CreateData(Command):
             :type db: <SQLAlchemy>
             :exceptions: None
         '''
-        super(CreateData, self).__init__()
+        super(CreateData, self).__init__()  # type: ignore
         self._db: SQLAlchemy = db
 
     def get_db(self) -> SQLAlchemy:
