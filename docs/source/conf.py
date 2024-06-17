@@ -16,7 +16,7 @@ Copyright
     You should have received a copy of the GNU General Public License along
     with this program. If not, see <http://www.gnu.org/licenses/>.
 Info
-    Definess properties for sphinx-doc.
+    Defines properties for sphinx-doc.
 '''
 
 import os
@@ -29,7 +29,7 @@ sys.path.insert(0, os.path.abspath('../../'))
 project: str = 'manage_flask'
 project_copyright: str = '2017, https://vroncevic.github.io/manage_flask'
 author: str = 'Vladimir Roncevic <elektron.ronca@gmail.com>'
-version: str = '1.6.1'
+version: str = '1.6.2'
 release: str = 'https://github.com/vroncevic/manage_flask/releases'
 extensions: List[str] = ['sphinx.ext.autodoc', 'sphinx.ext.viewcode', ]
 templates_path: List[str] = ['_templates']
